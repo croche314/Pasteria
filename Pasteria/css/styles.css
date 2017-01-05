@@ -1,0 +1,401 @@
+/*************************
+    Global Styles
+*************************/
+
+.container-fluid {
+    max-width: 1400px;
+	margin: 0 auto;
+	padding: 0;
+    color: #000;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+body,
+.row {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+
+img {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.subdued {
+    color: #333;
+    font-size: 80%;
+}
+
+.gray {
+    color: #CCC;
+}
+
+.blue {
+    background-color: #757D98;
+    height: 100px;
+}
+
+.white, #top-nav a.white {
+    color: #FFF;
+}
+
+.transparent {
+    background: transparent;
+}
+
+a[href^=tel] {
+    color: inherit;
+    text-decoration:inherit;
+}
+
+/*************************
+    header.php
+*************************/
+#header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: -50px;
+    margin-top: 50px;
+    background-color: transparent;
+    color: #000;
+    transition: top .5s;
+}
+
+#header.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 0;
+    border-radius: 0 0 50px 50px;
+    z-index: 999;
+    background-color: #757D98;
+    color: #FFF;
+    transition: top .5s;
+}
+
+#header.fixed-nav #logo h1 {
+    line-height: 15px;
+}
+
+#header.fixed-nav #top-nav li {
+    line-height: 20px;
+}
+
+#header.fixed-nav #top-nav a {
+    color: #FFF;
+}
+
+#logo h1 {
+    font-family: "League Script";
+    font-size: 200%;
+    text-align: center;
+}
+
+#top-nav {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#top-nav ul {
+	display: inline-block;
+	list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+#top-nav li {
+	display: inline-block;
+    line-height: 40px;
+    padding: 2%;
+}
+
+#top-nav a {
+    font-family: 'Quicksand';
+    font-size: 100%;
+    color: #333;
+}
+
+#top-nav a:hover {
+    text-decoration: none;
+    color: #757D98;
+    border-bottom: 2px dotted #ccc;
+}
+
+
+#main-content {
+    margin: 100px 0;
+}
+
+/*************************
+    index.php
+*************************/
+
+#jumbotron {
+    padding-top: 150px;
+    min-height: 700px;
+    background-image: url('../images/italy-villa.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#call-to-action {
+    padding-top: 10%;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+}
+
+#call-to-action h2 {
+    font-weight: 400;
+    font-size: 400%;
+}
+
+#call-to-action h3 {
+    font-size: 200%;
+}
+
+#call-to-action a {
+    color: #fff;
+}
+
+#call-to-action a:hover {
+    text-decoration: none;
+}
+
+#welcome-msg {
+    font-size: 125%;
+    padding: 10%;
+    font-family: 'Quicksand';
+}
+
+.open-table {
+    text-align: center;
+    display: block;
+}
+
+/*************************
+    menu.php
+*************************/
+
+#left-nav {
+   
+}
+
+#left-nav ul {
+    list-style-type: none;
+    height: 100%;
+    margin-top: 30px;
+}
+
+#left-nav li {
+    line-height: 15px;
+    margin: 15px 0;
+}
+
+#left-nav a {
+    color: #333;
+    font-size: 100%;
+}
+
+.fixed-left-nav {
+    z-index: 0;
+    position: fixed;
+    top: 75px;
+    left: 25px;
+    padding-right: 3%;
+}
+
+#left-nav.fixed-left-nav a{
+    color: #000;
+}
+
+.fixed-left-nav a:hover {
+    color: #CCC;
+}
+
+#right-menu {
+    
+}
+
+.menu {
+    margin-top: 5%;
+    font-size: 100%;
+    color: gray; 
+}
+
+.menu h2 {
+    color: gray;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu li {
+    padding: 2%;
+    padding-left: 0;
+}
+
+.menu b {
+    font-size: 120%;
+    font-weight: normal;
+    margin-right: 20px;
+    color: #333;
+}
+
+/*************************
+    gallery.php
+*************************/
+#photo-gallery {
+
+}
+#photo-gallery .row{
+
+}
+
+#photo-gallery figure {
+    padding: 2% 0;
+    text-align: center;
+}
+
+#photo-gallery img {
+    border: 3px solid #000;
+    box-shadow: 2px 2px 10px #666;
+    width: 90%;
+}
+
+/*************************
+    directions.php
+*************************/
+#directions .row {
+    padding: 0 20%;
+}
+
+#directions h2 {
+    margin: 5% 0;
+}
+
+iframe {
+    width: 100%;
+}
+
+.hours ul {
+    list-style-type: none;
+    font-size: 125%;
+    padding: 0;
+}
+
+.hours b {
+    margin-right: 25px;
+}
+
+.phone-number {
+    font-size: 125%;
+}
+
+.phone-number a {
+    color: #000;
+}
+
+/*************************
+    footer.php
+*************************/
+footer {
+    position: relative;
+    z-index: 2;
+}
+footer .row {
+    background-color: #757D98;
+    border-radius: 50px 50px 0 0;
+    color: #fff;
+    padding: 5% 0;
+    text-align: center;
+}
+
+#hours ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#open-table-widget img {
+    width: 50%;
+    padding: 4px;
+    border: 2px solid #757D98;
+}
+
+#open-table-widget img:hover {
+    border: 2px solid #fff;
+}
+
+#credits p {
+    padding-top: 50px;
+}
+
+/*****************************
+    Small screen devices
+*****************************/
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        padding: 0;
+        box-shadow: none;
+    }
+    .bg-img {
+        display: none;
+    }
+    
+    .top-banner h1 {
+        font-size: 200%;
+        font-size: 8vw;
+    }
+    
+    #top-nav {
+        font-size: 70%;
+    }
+    
+    #top-nav li {
+        margin: 0;
+        padding: 2%;
+    }
+    
+    #top-nav a {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #top-nav a:hover {
+        border: none;
+    }
+
+    #jumbotron {
+        background-size: 1000px;
+    }
+
+    #call-to-action h3 {
+    font-size: 100%;
+}
+
+    #directions .row {
+        padding: 0 10%;
+    }
+
+    #directions h2 {
+        font-size: 150%;
+    }
+
+    .hours ul{
+        list-style-type: none;
+    }
+    
+    footer .col-sm-4 {
+        margin-top: 10%;
+    }
+}
